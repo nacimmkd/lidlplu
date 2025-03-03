@@ -1,0 +1,22 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .PluApp {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vh;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("/imagesApp/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  

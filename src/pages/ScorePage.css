@@ -1,0 +1,13 @@
+.scorepage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vh;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("/imagesApp/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

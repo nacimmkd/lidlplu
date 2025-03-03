@@ -1,0 +1,38 @@
+
+.start {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vh;
+    min-width: 250px; 
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("/imagesApp/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.elements {
+    position: absolute;
+    bottom: 15%;
+}
+
+
+.elements a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #FFE768;
+    padding: 10px 60px;
+    margin: 0 auto 0;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.elements a:hover {
+    background-color: #f5e69a;
+}
