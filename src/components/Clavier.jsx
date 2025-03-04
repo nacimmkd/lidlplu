@@ -22,7 +22,7 @@ export default function Clavier({handleUserInput , score , totalProduits}) {
     }
 
     const handleTotalClick = () => {
-        navigate('/scorepage', { state: { score, totalProduits } });
+        navigate('/score', { state: { score, totalProduits } });
     }
 
 

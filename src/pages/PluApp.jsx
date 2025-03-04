@@ -43,7 +43,7 @@ function PluApp() {
   useEffect(() => {
     // Quand progress atteint le nombre total de produits, on redirige
     if (progress === maxQuextions) {
-      navigate('/scorepage', { state: { score : score, totalProduits: maxQuextions } });
+      navigate('/score', { state: { score : score, totalProduits: maxQuextions } });
     }
   }, [progress, score, navigate]);
 

@@ -5,7 +5,8 @@ export default function () {
     return (
         <div className="start">
             <div className="elements">
-                <Link to="/plu">Commancer</Link>
+                <Link className='commancer' to="/pluapp">Commancer</Link>
+                <Link className='savoir' to="/savoirplus">En Savoir Plus</Link>
             </div>
         </div>
     )

@@ -17,11 +17,16 @@
 
 .elements {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap : 15px
 }
 
 
-.elements a {
+.commancer {
     font-size: 1.5rem;
     font-weight: 600;
     background-color: #FFE768;
@@ -33,6 +38,18 @@
     text-decoration: none;
 }
 
-.elements a:hover {
+.commancer:hover {
     background-color: #f5e69a;
+}
+
+.savoir {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 60px;
+    margin: 0 auto 0;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(175, 210, 253, 0.489);
 }
