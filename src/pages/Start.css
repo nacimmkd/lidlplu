@@ -26,30 +26,25 @@
 }
 
 
-.commancer {
-    font-size: 1.5rem;
+.element {
+    width: 100%;
+    font-size: 1.4rem;
     font-weight: 600;
     background-color: #FFE768;
     padding: 10px 60px;
-    margin: 0 auto 0;
     border-radius: 10px;
     text-align: center;
     color: #000000;
     text-decoration: none;
 }
 
-.commancer:hover {
+.commencer:hover {
     background-color: #f5e69a;
 }
 
 .savoir {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 10px 60px;
-    margin: 0 auto 0;
     border-radius: 10px;
     text-align: center;
     color: #ffffff;
-    text-decoration: none;
     background-color: rgba(175, 210, 253, 0.489);
 }

@@ -28,7 +28,7 @@ export default function () {
                 <br />
                 {score === totalProduits && score > 0 ? <h1 id='bon'>Félicitations 🎉🏆</h1> : <h1 id='pasbon'>Dommage 😔 <br/> Essaie encore ! 💪</h1> }
             </div>
-            <Link to="/">Recommancer</Link>
+            <Link to="/">Recommencer</Link>
         </div>
     )
 }
