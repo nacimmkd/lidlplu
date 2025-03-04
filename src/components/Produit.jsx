@@ -14,7 +14,7 @@ export default function Produit({ image, nom , isCorrect }) {
                 {isCorrect === false && <img className="validation-icon" src={incorrectIcon} alt="Incorrect" />}
             </div>
             <div className="product-name">
-                <h1>{nom}</h1>
+                <p>{nom}</p>
             </div>
         </div>
     );

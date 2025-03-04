@@ -12,11 +12,12 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url("/imagesApp/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap : 5%;
   }
 
   
