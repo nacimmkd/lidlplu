@@ -12,6 +12,7 @@ function PluApp() {
   const [progress, setProgress] = useState(0);
   const [produits, setProduits] = useState([...data]);
   const [produitActual, setProduitActual] = useState(null);
+  const [maxQuextions] = useState(10);
   const [isCorrect , setIsCorrect] = useState(null);
   const navigate = useNavigate(); 
 
@@ -21,7 +22,7 @@ function PluApp() {
   };
 
   const getProduit = () => {
-    if (progress === data.length) {
+    if (progress === maxQuextions) {
       return;
     }
     const randomIndex = Math.floor(Math.random() * produits.length);
@@ -41,8 +42,8 @@ function PluApp() {
 
   useEffect(() => {
     // Quand progress atteint le nombre total de produits, on redirige
-    if (progress === data.length) {
-      navigate('/scorepage', { state: { score : score, totalProduits: data.length } });
+    if (progress === maxQuextions) {
+      navigate('/scorepage', { state: { score : score, totalProduits: maxQuextions } });
     }
   }, [progress, score, navigate]);
 
@@ -67,11 +68,11 @@ function PluApp() {
 
   return (
     <div className="PluApp">
-      <Header progress={progress} totalProduits={data.length} />
+      <Header progress={progress} totalProduits={maxQuextions} />
       {produitActual && produitActual.nom && (
         <Produit key={produitActual.plu} image={produitActual.image} nom={produitActual.nom} isCorrect={isCorrect} />
       )}
-      <Clavier handleUserInput={handleUserInput} score={score} totalProduits={data.length}/>
+      <Clavier handleUserInput={handleUserInput} score={score} totalProduits={maxQuextions}/>
     </div>
   );
 }

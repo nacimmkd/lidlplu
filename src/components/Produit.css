@@ -64,10 +64,8 @@
 .product-name {
     height: 30%;
     background-color: white;
-    padding: 10px 5%;
-    border-radius: 10px;
+    padding: 4% 0;
     margin-top: -20px; /* Légèrement chevauché sur l'image */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 90%; /* Toujours garder une bonne marge */
 }
@@ -77,9 +75,8 @@
     font-size: 1.1rem;
     font-family: 'Courier New', Courier, monospace;
     color: #333333;
-    font-size: 1.2rem;
-    margin: 2%;
-    white-space: nowrap; /* Empêche le texte de sauter à la ligne */
+    font-size: 1rem;
+    margin: 2%; /* Empêche le texte de sauter à la ligne */
     overflow: hidden;
     text-overflow: ellipsis; /* Si le texte est trop long, il sera coupé proprement */
 }
