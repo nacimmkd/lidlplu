@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Conteneur principal */
@@ -74,7 +75,6 @@
 
 /* Titre du produit */
 .product-name p{
-    font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
     color: #333333;
     font-size: 1.3rem;
@@ -82,5 +82,7 @@
     margin-bottom: 5px; /* Empêche le texte de sauter à la ligne */
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 

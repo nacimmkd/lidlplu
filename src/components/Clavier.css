@@ -13,12 +13,14 @@
     gap: 8px;
     background-color: #F7F7F7;
     border-radius: 60px 60px 0 0;
+    
 }
 
 .clavier-continer {
     display: flex;
     gap: 4px;
     flex-grow: 1; 
+    
 }
 
 .chiffres-continer {
@@ -82,13 +84,14 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     display: block;
     text-align: center;
+    border: 2px solid #5289FF;
 }
 
 
 
 .clavier input:disabled {
-    background-color: #e2e2e2;
-    border-color: #b0b0b0;
+    background-color: #5289ff34;
+    border-color: #5289ffe2;
     color: #333333;
     cursor: not-allowed;
 }
