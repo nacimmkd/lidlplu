@@ -1,12 +1,12 @@
-import './PluApp.css';
+import './PluQuiz.css';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import Clavier from '../components/Clavier';
-import Produit from '../components/Produit';
-import Header from '../components/Header';
+import Clavier from './Clavier';
+import Produit from './Produit';
+import Header from './Header';
 
-function PluApp() {
+function PluQuiz({affichePlu}) {
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -78,14 +78,14 @@ function PluApp() {
 
 
   return (
-    <div className="PluApp">
+    <div className="PluQuiz">
       <Header progress={progress} totalProduits={maxQuestions} />
       {produitActual && produitActual.nom && (
-        <Produit key={produitActual.plu} image={produitActual.image} nom={produitActual.nom} isCorrect={isCorrect} />
+        <Produit key={produitActual.plu} produit={produitActual} isCorrect={isCorrect} affichePlu={affichePlu}/>
       )}
       <Clavier handleUserInput={handleUserInput} score={score} totalProduits={maxQuestions} />
     </div>
   );
 }
 
-export default PluApp;
+export default PluQuiz;

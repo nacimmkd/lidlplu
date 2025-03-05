@@ -1,9 +1,13 @@
 import './Customize.css';
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useLocation } from "react-router-dom";
 import { fruits, legumes, pain } from '../data/Produits.js';
 
 function Customize() {
+
+  const location = useLocation();
+  const cameFrom = location.state?.from || "test";
+
   const [selected, setSelected] = useState(["Fruits", "Légumes", "Pains"]);
   const navigate = useNavigate();
 
@@ -29,8 +33,12 @@ function Customize() {
     if (selectedProducts.length === 0) {
       alert("Veuillez choisir une option.")
       return
-    } else {
-      navigate('/pluapp', { state: { selectedProducts } }); 
+    }
+    
+    if (cameFrom === "tester") {
+      navigate('/testplu', { state: { selectedProducts } }); 
+    } else if (cameFrom === "apprendre") {
+      navigate('/apprendre', { state: { selectedProducts } }); 
     }
   };
 

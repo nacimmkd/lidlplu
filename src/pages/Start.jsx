@@ -5,8 +5,9 @@ export default function () {
     return (
         <div className="startpage">
             <div className="elements-continer">
-                <Link className='commencer element' to="/customize">Commencer</Link>
-                <Link className='savoir element' to="/savoirplus">En Savoir Plus</Link>
+                <Link className='commencer element' to="/customize" state={{ from : "tester"}}> Se Tester</Link>
+                <Link className='element' to="/customize" state={{ from : "apprendre"}}>Apprendre</Link>
+                <Link className='element' to="/savoirplus">En Savoir Plus</Link>
             </div>
         </div>
     )

@@ -65,7 +65,7 @@
     gap: 10px;
     cursor: pointer;
     padding: 8px;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0a1; 
     width: 100%; 
     border-radius: 10px;
     border: 1px solid #eee; 
@@ -132,6 +132,7 @@
     font-size: 14px;
     font-weight: bold;
     color: black;
+
 }
 
 
