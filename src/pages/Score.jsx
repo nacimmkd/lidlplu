@@ -21,14 +21,16 @@ export default function () {
     }, [])
 
     return (
-        <div className="continer">
-            <div className={`score-container ${isSuccess ? 'success' : 'failure'}`}>
-                <h1 id='score'>{score}</h1>
-                <h1 id='totalQuestions'>{totalProduits}</h1>
-                <br />
-                {score === totalProduits && score > 0 ? <h1 id='bon'>Félicitations 🎉🏆</h1> : <h1 id='pasbon'>Dommage 😔 <br/> Essaie encore ! 💪</h1> }
+        <div className="scorepage">
+            <div className="continer">
+                <div className={`score-container ${isSuccess ? 'success' : 'failure'}`}>
+                    <h1 id='score'>{score}</h1>
+                    <h1 id='totalQuestions'>{totalProduits}</h1>
+                    <br />
+                    {score === totalProduits && score > 0 ? <h1 id='bon'>Félicitations 🎉🏆</h1> : <h1 id='pasbon'>Dommage 😔 <br/> Essaie encore ! 💪</h1> }
+                </div>
+                <Link to="/">Recommencer</Link>
             </div>
-            <Link to="/">Recommencer</Link>
         </div>
     )
 }

@@ -18,7 +18,8 @@
 .savoirplus .continer {
     width: 85%;
     height: 60%;
-    background-color: rgba(193, 208, 245, 0.927);
+    background-color: rgba(193, 208, 245, 0.6);
+    backdrop-filter: blur(10px); 
     border-radius: 10px;  
     padding: 15px; 
     overflow-y:scroll;

@@ -1,5 +1,5 @@
 
-.start {
+.startpage {
     width: 100vw;
     height: 100vh;
     max-width: 100vh;
@@ -15,32 +15,33 @@
 }
 
 
-.elements {
-    position: absolute;
-    bottom: 10%;
+.elements-continer {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10%;
     gap : 15px
 }
 
 
 .element {
-    width: 100%;
     font-size: 1.4rem;
     font-weight: 600;
     background-color: #FFE768;
-    padding: 10px 60px;
+    padding: 12px 50px;
     border-radius: 10px;
     text-align: center;
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    flex-grow: 1; 
 }
 
-.commencer:hover {
-    background-color: #f5e69a;
-}
 
 .savoir {
     border-radius: 10px;

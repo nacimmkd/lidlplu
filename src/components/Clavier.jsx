@@ -12,7 +12,7 @@ export default function Clavier({handleUserInput , score , totalProduits}) {
     }
 
     const handleClear = () => {
-        setInput(""); // par la suite je vais changer au nom de produit
+        setInput(""); 
     }
 
     const handlePluClick = () => {
