@@ -38,11 +38,13 @@
 }
 
 .success {
-    background-color: rgba(154, 251, 113, 0.7);
+    background-color: rgba(154, 251, 113, 0.5);
+    backdrop-filter: blur(10px); 
 }
 
 .failure {
-    background-color: rgb(255, 151, 151);
+    background-color: rgb(255, 151, 151 , 0.5);
+    backdrop-filter: blur(10px); 
 }
 
 h1 {
@@ -83,8 +85,7 @@ h1 {
     font-size: 1rem;
     color : black;
     background-color: rgb(198, 247, 178);
-    padding: 10px 10px;
-    border-radius: 15px;
+    padding: 15px 10px;
 }
 
 #pasbon {
@@ -92,6 +93,5 @@ h1 {
     color :black;
     background-color: rgb(218, 123, 123);
     padding: 15px 0;
-    border-radius: 15px;
 }
 

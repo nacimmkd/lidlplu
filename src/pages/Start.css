@@ -5,10 +5,10 @@
     max-width: 100vh;
     min-width: 250px; 
     margin: 0 auto 0;
+    background-image: url("/imagesApp/background.png");
     display: flex;
     justify-content: center; 
     align-items: center; 
-    background-image: url("/imagesApp/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,5 +47,7 @@
     border-radius: 10px;
     text-align: center;
     color: #ffffff;
-    background-color: rgba(175, 210, 253, 0.489);
+    background-color: rgba(175, 210, 253, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(175, 210, 253 , 0.5);
 }

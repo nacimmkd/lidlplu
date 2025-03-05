@@ -9,15 +9,17 @@ import Customize from './pages/Customize'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={ <Start/> } />
-        <Route path='savoirplus' element={ <SavoirPlus/> } />
-        <Route path='pluapp' element={ <PluApp/> }/>
-        <Route path='score' element={ <Score/> } />
-        <Route path='customize' element={ <Customize/> } />
-      </Routes>
-    </BrowserRouter>
+    <div className="lidlplu">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <Start/> } />
+          <Route path='savoirplus' element={ <SavoirPlus/> } />
+          <Route path='pluapp' element={ <PluApp/> }/>
+          <Route path='score' element={ <Score/> } />
+          <Route path='customize' element={ <Customize/> } />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

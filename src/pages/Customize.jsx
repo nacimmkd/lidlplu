@@ -26,7 +26,12 @@ function Customize() {
  
   const handleValidate = () => {
     const selectedProducts = getSelectedProducts();
-    navigate('/pluapp', { state: { selectedProducts } }); 
+    if (selectedProducts.length === 0) {
+      alert("Veuillez choisir une option.")
+      return
+    } else {
+      navigate('/pluapp', { state: { selectedProducts } }); 
+    }
   };
 
   
