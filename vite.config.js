@@ -7,8 +7,5 @@ export default defineConfig({
   server : {
     historyApiFallback: true,
   },
-<<<<<<< HEAD
-})
-=======
 });
->>>>>>> c98f338 (update vite.config.js)
+
